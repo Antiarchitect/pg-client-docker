@@ -1,6 +1,9 @@
 FROM alpine:3.9
 LABEL maintainer="Antiarchitect <voronkovaa@gmail.com>"
 
-RUN apk add --no-cache postgresql-client
+RUN apk add --no-cache \
+    bash \
+    curl \
+    postgresql-client
 
 CMD ["/bin/sh", "-c", "while sleep 60; do echo 'Hi...'; done"]
