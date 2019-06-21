@@ -1,4 +1,4 @@
-FROM alpine:3.9
+FROM alpine:3.10
 LABEL maintainer="Antiarchitect <voronkovaa@gmail.com>"
 
 RUN apk add --no-cache postgresql-client
